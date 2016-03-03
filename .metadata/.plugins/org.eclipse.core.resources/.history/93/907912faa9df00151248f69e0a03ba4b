@@ -1,0 +1,43 @@
+
+<!-- DIV contenedor de la información seleccionada por el usuario desde el MENU1 y el MENU2 -->
+
+<div class="row">
+	<!-- Botonera del MENU 1 -->
+	<div class="col-sm-2 prueba">
+		<ul class="nav nav-pills nav-stacked">
+			<li role="presentation" class="active"><a href="#">Tasaci�n de vehículos</a></li>
+			<li role="presentation"><a href="#">Vehículos en despiece</a></li>
+			<li role="presentation"><a href="#">Venta de recambios</a></li>
+			<li role="presentation"><a href="#">Productos destacados</a></li>
+			<li role="presentation"><a href="#">Busqueda de repuestos</a></li>
+		</ul>
+	</div>
+
+	<!-- div que recibirá las pantallas segun la opcion de los MENUS que se pulse -->
+	<div id="central" class="col-sm-8 menu-central">
+		<ul class="nav nav-tabs">
+			<li role="presentation" class="active">
+				<a href="#">Empresa</a>
+			</li>
+			<li role="presentation">
+				<a href="#">Localización</a>
+			</li>
+			<li role="presentation">
+				<a href="#">Contacto</a>
+			</li>
+		</ul>
+
+		<!-- Div donde se cargarán todas las pantallas del MENU 2 -->
+		<div id="cargaMenu2" class="carga-menu2">
+			<!-- QUitar --> <?php include "includes/menu2/tasacion.php" ?>
+			<!-- QUitar --> <?php include "includes/menu2/inicio.php" ?>
+			<!-- QUitar --> <?php include "includes/menu2/localizacion.php" ?>
+			<!-- QUitar --> <?php include "includes/menu2/contacto.php" ?>
+		</div>
+	</div>
+
+	<!-- Area de Noticias y sellos autorizados -->
+	<div class="col-sm-2 prueba">
+		
+	</div>
+</div>

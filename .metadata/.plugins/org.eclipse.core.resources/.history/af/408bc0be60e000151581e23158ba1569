@@ -1,0 +1,84 @@
+/* **************************************************************** */
+/* **************************************************************** */
+/*  CSS con las clases externas a bootstrap usadas para el diseÃ±o   */
+/*  de la pÃ¡gina web.												*/
+/* **************************************************************** */
+/* **************************************************************** */
+/*//// QUITAR //////*/
+.prueba {
+  border: 1px;
+  border-style: solid;
+  padding: 5px;
+  background-color: white; 
+}
+
+/* **************************************************************** */
+
+
+/* 					        Clases CSS sobre etiquetas html 				        */
+/* **************************************************************** */
+
+body {
+  background-color: #bcd1f6; 
+}
+
+/*          		           Nuevas clases CSS 							          */
+/* **************************************************************** */
+
+.menu-central {
+	padding-left: 3px;
+	padding-right: 3px;
+}
+
+.carga-menu2 {
+	padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.margenes {
+	margin-bottom: 20px;
+}
+
+/* Animacion de los botones superiores de la pantalla de tasación - INI */
+.bot-tasacion {
+	border: none;
+	background: #3a7999;
+	color: #f2f2f2;
+	padding: 10px;
+	font-size: 18px;
+	border-radius: 5px;
+	position: relative;
+	box-sizing: border-box;
+	transition: all 500ms ease;
+	padding: 10px 35px;
+	overflow:hidden;
+}
+
+/* Botón Porque */
+#botTasPorque.bot-tasacion:before {
+	font-family: FontAwesome;
+	content:"\f059";
+	position: absolute;
+	top: 11px;
+	left: -30px;
+	transition: all 200ms ease;
+}
+
+#botTasPorque.bot-tasacion:hover:before {
+	left: 7px;
+}
+
+/* Botón Documentacion */
+#botTasDocu.bot-tasacion:before {
+	font-family: FontAwesome;
+	content:"\f059";
+	position: absolute;
+	top: 11px;
+	left: -30px;
+	transition: all 200ms ease;
+}
+
+#botTasDocu.bot-tasacion:hover:before {
+	left: 7px;
+}
+/* Animacion de los botones superiores de la pantalla de tasación - FIN */

@@ -1,0 +1,153 @@
+<div class="panel panel-primary">
+	<div class="panel-heading">
+		<p class="text-center">
+			<strong>Rellene el formulario para la tasación de su vehículo</strong>
+		</p>
+	</div>
+	<div class="panel-body">
+		<div class="row">
+			<h4>tasacion@desguacesboyaca.es</h4>
+			<h4>Tasaciones 91 832 0199</h4>
+		</div>
+		
+		<!-- Botones de ayuda tasaciones -->
+		<div class="btn-group btn-group-justified">
+			<div class="btn-group">
+				<button id="botTasPorque" class="btn btn-primary bot-tasacion">¿Por que elegirnos?</button>
+			</div>
+			<div class="btn-group">
+				<button id="botTasDocu" class="btn btn-primary bot-tasacion">Documentación</button>
+			</div>
+			<div class="btn-group">
+				<button id="botTasCall" class="btn btn-primary bot-tasacion">Nosotros le llamamos</button>
+			</div>
+		</div>
+		
+		<p class="text-center">
+			Le contestaremos sin compromiso ninguno para Ud. En menos de 24h.
+		</p>
+		<h4 class="col-sm-12">Datos del Vehículo:</h4>
+		<form id="datosTasacion" class="form-horizontal">
+			<div class="form-group form-group-sm">
+			<!-- Tipo de Vehículo -->
+				<label for="inputVehiculo" class="col-sm-3 control-label">Vehículo:</label>
+				<div class="col-sm-3">
+					<select id="inputVehiculo" class="form-control">
+						<option value="00">Seleccione tipo...</option>
+						<option value="01">Coche</option>
+						<option value="02">Furgoneta</option>
+						<option value="03">Moto</option>
+					</select>
+				</div>
+			<!-- Kilometros -->
+				<label for="kilometros" class="col-sm-1  col-md-offset-2 control-label">Kms.:</label>
+				<div class="col-sm-2">
+					<input type="text" class="form-control" id="kilometros" placeholder="">
+				</div>
+			</div>
+			
+			<!-- Año Matriculación -->
+			<div class="form-group form-group-sm">
+				<label for="anyoMatricula" class="col-sm-3 control-label">Año 1ª matriculación:</label>
+				<div class="col-sm-3">
+					<input type="text" class="form-control" id="anyoMatricula" placeholder="">
+				</div>
+			<!-- Matricula -->
+				<label for="matricula" class="col-sm-3 control-label">Matrícula:</label>
+				<div class="col-sm-2">
+					<input type="text" class="form-control" id="matricula" placeholder="">
+				</div>
+			</div>	
+			
+			<!-- Combustible -->
+			<div class="form-group form-group-sm">
+				<label for="inputCombustible" class="col-sm-3 control-label">Combustible:</label>
+				<div class="col-sm-3">
+					<select id="inputCombustible" class="form-control">
+						<option value="00">Seleccione tipo...</option>
+						<option value="01">Gasolina</option>
+						<option value="02">Diesel</option>
+						<option value="03">Híbrido</option>
+					</select>
+				</div>
+			</div>
+			
+			<!-- Datos del vehículo -->
+			<div class="form-group form-group-sm">
+			<!-- Marca -->
+				<label for="inputMarca" class="col-sm-3 control-label">Marca:</label>
+				<div class="col-sm-2">
+					<input type="text" class="form-control" id="inputMarca" placeholder="">
+				</div>
+			<!-- Modelo -->
+				<label for="inputModelo" class="col-sm-1 control-label">Modelo:</label>
+				<div class="col-sm-2">
+					<input type="text" class="form-control" id="inputModelo" placeholder="">
+				</div>
+			<!-- Version -->
+				<label for="inputVersion" class="col-sm-1 control-label">Versión:</label>
+				<div class="col-sm-2">
+					<input type="text" class="form-control" id="inputVersion" placeholder="">
+				</div>
+			</div>
+			
+			<!-- Descripción y comentarios -->
+			<div class="form-group form-group-sm">
+				<label for="inputDescripcion" class="col-sm-3 control-label">Descripción y comentarios:</label>
+				<div class="col-sm-8">
+					<textarea class="form-control" id="inputDescripcion" rows="6" placeholder="Comentarios adicionales"></textarea>
+				</div>
+			</div>
+			
+			<!-- Lugar de recogida -->
+			<h4 class="col-sm-12">Lugar de recogida del vehículo:</h4>
+			<div class="form-group form-group-sm">
+			<!-- Localidad -->
+				<label for="inputLocalidad" class="col-sm-3 control-label">Localidad:</label>
+				<div class="col-sm-4">
+					<input type="text" class="form-control" id="inputLocalidad" placeholder="">
+				</div>
+			<!-- Población -->
+				<label for="inputPoblacion" class="col-sm-2 control-label">Población:</label>
+				<div class="col-sm-2">
+					<input type="text" class="form-control" id="inputPoblacion" placeholder="">
+				</div>
+			</div>
+			
+			<!-- Datos de Contacto -->
+			<h4 class="col-sm-12">Datos de Contacto:</h4>
+			<div class="form-group form-group-sm">
+			<!-- Marca -->
+				<label for="inputMarca" class="col-sm-2 control-label">Nombre:</label>
+				<div class="col-sm-3">
+					<input type="text" class="form-control" id="inputMarca" placeholder="">
+				</div>
+			<!-- Modelo -->
+				<label for="inputModelo" class="col-sm-1 control-label">Teléf.:</label>
+				<div class="col-sm-2">
+					<input type="text" class="form-control" id="inputModelo" placeholder="">
+				</div>
+			<!-- Version -->
+				<label for="inputVersion" class="col-sm-1 control-label">Mail:</label>
+				<div class="col-sm-2">
+					<input type="text" class="form-control" id="inputVersion" placeholder="">
+				</div>
+			</div>
+					
+			<!-- Boton Limpiar formulario -->
+			<div class="form-group form-group-sm">
+				<div class="col-sm-3 col-md-offset-1">
+					<button id="botTasaLimpiar" type="submit" class="btn btn-primary">Borrar datos</button>
+				</div>
+			<!-- Boton de envio de datos -->
+				<div class="col-sm-3 col-md-offset-5">
+					<button id="botTasaEnviar" type="submit" class="btn btn-primary">Enviar datos</button>
+				</div>
+			</div>
+			<p class="text-justify">
+				Le informamos de que sus datos serán utilizados exclusivamente para contestar a su consulta o comentario, sin que pasen a formar parte de ningún 
+				fichero con datos de carácter personal, procediendo posteriormente a su cancelación.
+			</p>
+		</form>
+	</div>
+</div>
